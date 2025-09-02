@@ -183,6 +183,7 @@ cd ai-code-review-plugin
 
 # 5. 启动开发环境
 ./gradlew runIde
+
 ```
 
 ### 项目结构
