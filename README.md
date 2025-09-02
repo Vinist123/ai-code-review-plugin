@@ -87,6 +87,9 @@ AI Code Review Plugin 是一个专为 IntelliJ IDEA 开发的智能代码评审�
    ![AI Review Button](docs/images/ai-review-button.png)
    *AI 评审按钮位置示意图*
 
+   ![AI Review Button](docs/images/select.png)
+   *右键菜单选择示意图*
+
 3. **查看评审结果**
    - 插件会自动分析所有待提交的代码变更
    - 评审结果会显示在弹出窗口中
@@ -94,6 +97,11 @@ AI Code Review Plugin 是一个专为 IntelliJ IDEA 开发的智能代码评审�
 
    ![Review Results](docs/images/review-results.png)
    *AI 评审结果示例*
+
+4. **LLM配置**
+   ![AI Review Button](docs/images/llm-config.png)
+   *AI 配置示意图*
+
 
 ### 编辑器中的代码评审
 
@@ -154,53 +162,6 @@ AI Code Review Plugin 是一个专为 IntelliJ IDEA 开发的智能代码评审�
 | 代码规范 | 🔵 | 不符合编码规范 | 命名不规范、格式问题 |
 | 最佳实践 | 💡 | 改进建议 | 设计模式、代码结构优化 |
 
-## 🔧 开发构建
-
-### 环境准备
-
-```bash
-# 环境要求
-JDK 17+
-Gradle 8.0+
-IntelliJ IDEA 2023.1+
-```
-
-### 构建步骤
-
-```bash
-# 1. 克隆项目
-git clone https://github.com/Vinist123/ai-codereview.git
-cd ai-code-review-plugin
-
-# 2. 构建项目
-./gradlew build
-
-# 3. 运行测试
-./gradlew test
-
-# 4. 构建插件包
-./gradlew buildPlugin
-
-# 5. 启动开发环境
-./gradlew runIde
-```
-
-### 项目结构
-
-```
-src/
-├── main/
-│   ├── java/
-│   │   └── com/vinist/ai/codereview/
-│   │       ├── actions/           # 用户操作
-│   │       ├── services/          # 核心服务
-│   │       ├── ui/               # 用户界面
-│   │       └── utils/            # 工具类
-│   └── resources/
-│       ├── META-INF/plugin.xml   # 插件配置
-│       └── icons/               # 图标资源
-└── test/                        # 测试代码
-```
 
 ## 🤝 贡献指南
 
@@ -210,7 +171,7 @@ src/
 
 1. **Fork 项目**
    ```bash
-   git clone https://github.com/Vinist123/ai-codereview.git
+   git clone https://github.com/Vinist123/ai-code-review-plugin.git
    ```
 
 2. **创建特性分支**
@@ -240,8 +201,9 @@ src/
 
 ## 📄 许可证
 
-本项目采用 [MIT License](LICENSE) 许可证。
+本项目采用 [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.html) 许可证。
 
 ## 📞 联系方式
 
 如有问题或建议，欢迎通过以下方式联系：
+ 📮 haodi0312@163.com
