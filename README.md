@@ -34,7 +34,7 @@ AI Code Review Plugin 是一个专为 IntelliJ IDEA 开发的智能代码评审�
 
 1. 打开 IntelliJ IDEA
 2. 进入 `File` → `Settings` → `Plugins`
-3. 在 Marketplace 中搜索 "AI Code Review"
+3. 在 Marketplace 中搜索 "AI-Code Review"
 4. 点击 `Install` 安装插件
 5. 重启 IDE 完成安装
 

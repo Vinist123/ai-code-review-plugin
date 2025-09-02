@@ -1,9 +1,21 @@
 <idea-plugin>
     <id>com.vinist.ai.codereview</id>
-    <name>AI Code Review</name>
+    <name>AI-Code Review</name>
     <vendor email="haodi0312@163.com" url="">Vinist</vendor>
 
     <description><![CDATA[
+    AI-powered code review tool for IntelliJ IDEA. 
+    
+    Key Features:
+    - Adds AI code review button in Git commit window
+    - Supports multiple LLM services (OpenAI, Claude, etc.)
+    - Smart code quality analysis and standards inspection
+    - Detailed review reports (popup + console output)
+    - Configurable rules and severity levels
+    
+    Improve code quality and accelerate development workflow!
+    
+    ===========================================
     AI驱动的代码自动评审工具，集成到IntelliJ IDEA开发环境中。
     
     主要功能：
@@ -15,6 +27,7 @@
     
     提升代码质量，加速开发流程！
     ]]></description>
+
 
     <!-- Product and plugin compatibility requirements -->
     <depends>com.intellij.modules.platform</depends>
