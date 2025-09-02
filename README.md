@@ -169,7 +169,7 @@ IntelliJ IDEA 2023.1+
 
 ```bash
 # 1. 克隆项目
-git clone https://github.com/your-username/ai-code-review-plugin.git
+git clone https://github.com/Vinist123/ai-codereview.git
 cd ai-code-review-plugin
 
 # 2. 构建项目
@@ -210,7 +210,7 @@ src/
 
 1. **Fork 项目**
    ```bash
-   git clone https://github.com/your-username/ai-code-review-plugin.git
+   git clone https://github.com/Vinist123/ai-codereview.git
    ```
 
 2. **创建特性分支**
