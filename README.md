@@ -88,9 +88,6 @@ AI Code Review Plugin 是一个专为 IntelliJ IDEA 开发的智能代码评审�
    ![AI Review Button](docs/images/ai-review-button.png)
    *AI 评审按钮位置示意图*
 
-   ![AI Review Button](docs/images/select.png)
-   *右键菜单选择示意图*
-
 3. **查看评审结果**
    - 插件会自动分析所有待提交的代码变更
    - 评审结果会显示在弹出窗口中
@@ -100,7 +97,7 @@ AI Code Review Plugin 是一个专为 IntelliJ IDEA 开发的智能代码评审�
    *AI 评审结果示例*
 
 4. **LLM配置**
-   ![AI Review Button](docs/images/llm-config.png)
+   ![AI Config](docs/images/llm-config.png)
    *AI 配置示意图*
 
 
@@ -118,7 +115,7 @@ AI Code Review Plugin 是一个专为 IntelliJ IDEA 开发的智能代码评审�
    - 评审结果会在侧边栏或弹窗中显示
    - 可以直接应用建议的修改
 
-   ![Context Menu](docs/images/context-menu.png)
+   ![Context Menu](docs/images/select.png)
    *右键菜单中的 AI 评审选项*
 
 ## 📊 评审报告详解
