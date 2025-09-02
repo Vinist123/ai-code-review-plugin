@@ -1,0 +1,26 @@
+<svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+  <!-- AI Robot Head - Dark Theme -->
+  <rect x="3" y="2" width="10" height="8" rx="2" ry="2" fill="#6AB7FF" stroke="#4A90E2" stroke-width="0.5"/>
+  
+  <!-- Robot Eyes -->
+  <circle cx="6" cy="5" r="1.5" fill="#FFFFFF"/>
+  <circle cx="10" cy="5" r="1.5" fill="#FFFFFF"/>
+  <circle cx="6" cy="5" r="0.8" fill="#2E5C8A"/>
+  <circle cx="10" cy="5" r="0.8" fill="#2E5C8A"/>
+  
+  <!-- Robot Mouth/Code Symbol -->
+  <rect x="5" y="7" width="6" height="1" rx="0.5" fill="#4A90E2"/>
+  
+  <!-- Code Brackets -->
+  <path d="M1 6 L2 8 L1 10" stroke="#6AB7FF" stroke-width="1" fill="none" stroke-linecap="round"/>
+  <path d="M15 6 L14 8 L15 10" stroke="#6AB7FF" stroke-width="1" fill="none" stroke-linecap="round"/>
+  
+  <!-- Code Lines -->
+  <line x1="4" y1="12" x2="7" y2="12" stroke="#6AB7FF" stroke-width="0.8" stroke-linecap="round"/>
+  <line x1="9" y1="12" x2="12" y2="12" stroke="#6AB7FF" stroke-width="0.8" stroke-linecap="round"/>
+  <line x1="5" y1="14" x2="11" y2="14" stroke="#6AB7FF" stroke-width="0.8" stroke-linecap="round"/>
+  
+  <!-- AI Antenna -->
+  <circle cx="8" cy="1" r="0.8" fill="#6AB7FF"/>
+  <line x1="8" y1="1.8" x2="8" y2="2" stroke="#4A90E2" stroke-width="0.5"/>
+</svg>

@@ -1,0 +1,92 @@
+<idea-plugin>
+    <id>com.vinist.ai.codereview</id>
+    <name>AI Code Review</name>
+    <vendor email="haodi0312@163.com" url="">Vinist</vendor>
+
+    <description><![CDATA[
+    AI驱动的代码自动评审工具，集成到IntelliJ IDEA开发环境中。
+    
+    主要功能：
+    - 在Git提交窗口添加AI代码评审按钮
+    - 支持多种LLM服务配置（OpenAI、Claude等）
+    - 智能代码质量分析和规范检查
+    - 详细的评审报告展示（弹窗和控制台输出）
+    - 可配置的评审规则和严重级别
+    
+    提升代码质量，加速开发流程！
+    ]]></description>
+
+    <!-- Product and plugin compatibility requirements -->
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.java</depends>
+    <depends>Git4Idea</depends>
+
+    <!-- Extension points defined by the plugin -->
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- 配置页面 -->
+        <applicationConfigurable 
+            parentId="tools" 
+            instance="com.vinist.ai.codereview.settings.AICodeReviewConfigurable"
+            id="com.vinist.ai.codereview.settings.AICodeReviewConfigurable"
+            displayName="AI Code Review"/>
+        
+        <!-- 应用级别的服务 -->
+        <applicationService 
+            serviceImplementation="com.vinist.ai.codereview.services.LLMConfigService"/>
+        <applicationService 
+            serviceImplementation="com.vinist.ai.codereview.services.ReviewSettingsService"/>
+        
+        <!-- 项目级别的服务 -->
+        <projectService 
+            serviceImplementation="com.vinist.ai.codereview.services.CodeAnalysisService"/>
+        <projectService 
+            serviceImplementation="com.vinist.ai.codereview.services.LLMClientService"/>
+        <projectService 
+            serviceImplementation="com.vinist.ai.codereview.services.ReportGenerationService"/>
+        
+        <!-- VCS相关扩展 -->
+        <checkinHandlerFactory 
+            implementation="com.vinist.ai.codereview.vcs.AIReviewCheckinHandlerFactory"/>
+        
+        <!-- Git提交窗口AI评审图标 - 已改为Action方式实现 -->
+        <!-- 
+        <checkinHandlerFactory 
+            implementation="com.vinist.ai.codereview.vcs.CommitReviewIconHandlerFactory"/>
+        -->
+    </extensions>
+
+    <idea-version since-build="232"/>
+
+    <!-- Actions -->
+    <actions>
+        <!-- 提交消息工具栏中的AI评审按钮 -->
+        <action id="com.vinist.ai.codereview.actions.CommitMessageAIReviewAction"
+                class="com.vinist.ai.codereview.actions.CommitMessageAIReviewAction"
+                text="AI Code Review"
+                description="Perform AI code review on selected changes"
+                icon="/icons/ai-review-16.svg">
+            <!-- 添加到VCS提交工具栏 -->
+            <add-to-group group-id="Vcs.MessageActionGroup" anchor="last"/>
+        </action>
+        
+        <!-- 编辑器右键菜单 -->
+        <action id="com.vinist.ai.codereview.actions.ReviewSelectedCodeAction"
+                class="com.vinist.ai.codereview.actions.ReviewSelectedCodeAction"
+                text="Review Selected Code with AI"
+                description="Review selected code with AI">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+    </actions>
+
+    <change-notes><![CDATA[
+    <h3>1.0.0</h3>
+    <ul>
+        <li>初始版本发布</li>
+        <li>支持在Git提交窗口添加AI评审按钮</li>
+        <li>集成OpenAI和其他LLM服务</li>
+        <li>智能代码评审报告生成</li>
+        <li>可配置的评审规则和设置</li>
+    </ul>
+    ]]>
+    </change-notes>
+</idea-plugin>
