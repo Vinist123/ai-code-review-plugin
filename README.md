@@ -191,7 +191,7 @@ cd ai-code-review-plugin
 src/
 ├── main/
 │   ├── java/
-│   │   └── com/github/username/aicodereview/
+│   │   └── com/vinist/ai/codereview/
 │   │       ├── actions/           # 用户操作
 │   │       ├── services/          # 核心服务
 │   │       ├── ui/               # 用户界面
