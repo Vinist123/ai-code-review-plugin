@@ -38,14 +38,6 @@ AI-Code Review Plugin 是一个专为 IntelliJ IDEA 开发的智能代码评审�
 4. 点击 `Install` 安装插件
 5. 重启 IDE 完成安装
 
-### 方式二：本地安装
-
-1. 从 [Releases](../../releases) 页面下载最新版本的 `.zip` 文件
-2. 打开 IntelliJ IDEA
-3. 进入 `File` → `Settings` → `Plugins`
-4. 点击 ⚙️ 图标，选择 `Install Plugin from Disk...`
-5. 选择下载的插件文件
-6. 重启 IDE
 
 ## ⚙️ 配置说明
 
