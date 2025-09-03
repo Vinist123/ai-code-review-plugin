@@ -102,7 +102,7 @@ public class AIReviewCheckinHandler extends CheckinHandler {
             
             // 显示进度对话框
             ProgressDialog progressDialog = new ProgressDialog(project);
-            progressDialog.show();
+            progressDialog.setVisible(true);
             
             CompletableFuture<ReviewReport> reviewFuture = CompletableFuture.supplyAsync(() -> {
                 try {
@@ -367,8 +367,7 @@ public class AIReviewCheckinHandler extends CheckinHandler {
                 return panel;
             }
             
-            @Override
-            public void refresh() {
+            public void refreshState() {
                 if (enableReviewCheckBox != null) {
                     enableReviewCheckBox.setSelected(reviewSettingsService.isEnableAutoReview());
                 }
@@ -381,9 +380,8 @@ public class AIReviewCheckinHandler extends CheckinHandler {
                 }
             }
             
-            @Override
             public void restoreState() {
-                refresh();
+                refreshState();
             }
         };
     }

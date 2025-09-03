@@ -23,7 +23,7 @@ dependencies {
 intellij {
     version.set("2023.2.2")
 //    type.set("IC") // IntelliJ IDEA Community Edition
-    plugins.set(["Git4Idea", "com.intellij.java"])
+    plugins.set(["Git4Idea"])
 }
 
 tasks {
@@ -38,7 +38,7 @@ tasks {
 
     patchPluginXml {
         sinceBuild.set("232")
-        untilBuild.set("243.*")
+        untilBuild.set("")
     }
 
     signPlugin {

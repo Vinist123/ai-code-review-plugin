@@ -285,8 +285,7 @@ public class CommitReviewIconComponent implements RefreshableOnComponent {
         return mainPanel;
     }
     
-    @Override
-    public void refresh() {
+    public void refreshState() {
         updateButtonState();
     }
     
@@ -297,7 +296,7 @@ public class CommitReviewIconComponent implements RefreshableOnComponent {
     
     @Override
     public void restoreState() {
-        refresh();
+        refreshState();
     }
     
     /**

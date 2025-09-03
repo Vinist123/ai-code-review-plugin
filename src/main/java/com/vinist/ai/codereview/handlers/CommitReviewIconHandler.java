@@ -2,7 +2,7 @@ package com.vinist.ai.codereview.handlers;
 
 import com.intellij.openapi.vcs.CheckinProjectPanel;
 import com.intellij.openapi.vcs.checkin.CheckinHandler;
-import com.intellij.openapi.vcs.checkin.CheckinMetaHandler;
+
 import com.intellij.openapi.vcs.ui.RefreshableOnComponent;
 import com.intellij.openapi.project.Project;
 import com.vinist.ai.codereview.ui.CommitReviewIconComponent;
@@ -16,7 +16,7 @@ import java.util.List;
  * Git提交窗口AI评审图标处理器
  * 负责在Git提交窗口中添加AI评审图标组件
  */
-public class CommitReviewIconHandler extends CheckinHandler implements CheckinMetaHandler {
+public class CommitReviewIconHandler extends CheckinHandler {
     
     private final Project project;
     private final CommitReviewIconComponent reviewIconComponent;
@@ -34,9 +34,8 @@ public class CommitReviewIconHandler extends CheckinHandler implements CheckinMe
                 return reviewIconComponent.getComponent();
             }
             
-            @Override
-            public void refresh() {
-                reviewIconComponent.refresh();
+            public void refreshState() {
+                reviewIconComponent.refreshState();
             }
 
             @Override
@@ -75,8 +74,4 @@ public class CommitReviewIconHandler extends CheckinHandler implements CheckinMe
 //        // 提交失败时不需要特殊处理
 //    }
 
-    @Override
-    public void runCheckinHandlers(@NotNull Runnable runnable) {
-
-    }
 }

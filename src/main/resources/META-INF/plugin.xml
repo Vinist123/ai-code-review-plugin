@@ -31,7 +31,7 @@
 
     <!-- Product and plugin compatibility requirements -->
     <depends>com.intellij.modules.platform</depends>
-    <depends>com.intellij.modules.java</depends>
+<!--    <depends>com.intellij.modules.java</depends>-->
     <depends>Git4Idea</depends>
 
     <!-- Extension points defined by the plugin -->
@@ -68,7 +68,6 @@
         -->
     </extensions>
 
-    <idea-version since-build="232"/>
 
     <!-- Actions -->
     <actions>
