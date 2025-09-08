@@ -234,6 +234,8 @@ src/
 
 本项目采用 [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) 许可证。
 
+
+[![hits](https://hits.dwyl.com/vinist123/ai-code-review-plugin.svg?style=flat)](http://hits.dwyl.com/vinist123/ai-code-review-plugin)
 ## 📞 联系方式
 
 如有问题或建议，欢迎通过以下方式联系：
